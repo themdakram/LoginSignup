@@ -17,6 +17,8 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use('/auth', AuthRouter);
 app.use('/products', ProductRouter);
+app.use(express.json());
+
 
 
 app.listen(PORT, () => {
